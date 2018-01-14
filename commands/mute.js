@@ -23,6 +23,9 @@ exports.run = async (client, message, args) => {
   let muteRole = client.guilds
     .get(message.guild.id)
     .roles.find("name", settings.silencedRoleName);
+  let driverRole = client.guilds
+    .get(message.guild.id)
+    .roles.find("name", settings.memberRoleName);
 
   if (!modLog)
     return message
@@ -61,6 +64,7 @@ exports.run = async (client, message, args) => {
     return message.guild
       .member(user)
       .removeRole(muteRole)
+      .addRole(driverRole)
       .then(() => {
         client.channels
           .get(modLog.id)
@@ -71,6 +75,7 @@ exports.run = async (client, message, args) => {
 
   return message.guild
     .member(user)
+    .removeRole(driverRole)
     .addRole(muteRole)
     .then(() => {
       client.channels

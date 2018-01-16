@@ -59,7 +59,7 @@ exports.conf = {
 exports.help = {
   name: "help",
   description:
-    "Display's all the available commands for your permission level.",
+    "Display's this dialog.",
   usage: "help [command]",
 };
 // End of Misc.

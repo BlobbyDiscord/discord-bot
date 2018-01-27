@@ -64,8 +64,10 @@ exports.run = async (client, message, args) => {
     return message.guild
       .member(user)
       .removeRole(muteRole)
-      .addRole(driverRole)
       .then(() => {
+		message.guild.
+		member(user).
+		addRole(driverRole)
         client.channels
           .get(modLog.id)
           .send({ embed })
@@ -76,8 +78,10 @@ exports.run = async (client, message, args) => {
   return message.guild
     .member(user)
     .removeRole(driverRole)
-    .addRole(muteRole)
     .then(() => {
+	  message.guild.
+	  member(user).
+	  addRole(muteRole)
       client.channels
         .get(modLog.id)
         .send({ embed })

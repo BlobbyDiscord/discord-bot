@@ -43,5 +43,11 @@ module.exports = async (message) => {
       message.channel.send(`${message.author}, this channel is for suggestions \*\*only\*\*, if you wish to discuss a suggestion that has been made please use the ${hgvmpChat} channel. Otherwise, ensure your post follows the suggestion guideline when putting forward an idea:\n\n\`\`\`Suggestion:\nDescription:\nWhat benefits does it have?\nScreenshots / Images of Suggestion:\`\`\`\n\n\*This post will be removed in 15 seconds\*`).then(message => message.delete(15000));
     }
   }
+  
+  
+  if (message.channel.id === '395684180341686272') {
+    await message.react('387688773326209026')
+    await message.react('387688754258771968')
+  }
 };
 // End of Message Event

@@ -56,8 +56,8 @@ client.reload = command =>
 // End of Reload Command
 
 // Sneaky sneaky, testing the webhook for Discord. Sh, don't tell Inclusive... Have a bribe cookie? @<(o.o <)
-
 // Never mind, I want that cookie back.
+// Actually, I changed my mind. Give me half back and we can call it a day.
 
 // Elevation of Messages (Permission System, etc.)
 client.elevation = message => {

@@ -3,7 +3,7 @@
   "prefix": "!",
   "adminRoleName": "Discord Admin",
   "silencedRoleName": "Silenced",
-  "memberRoleName": "Driver",
+  "memberRoleName": "Drivers",
   "commandsChannel": "383850372768202753",
   "moderationLogsChannel": "380555872105005058",
   "membersLogsChannel": "383903272378957824",

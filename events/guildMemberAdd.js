@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 module.exports = (member) => {
   console.log(`${member.user.username} has joined the server!`);
   
-  const role = member.guild.roles.find('name', 'Driver');
+  const role = member.guild.roles.find('name', settings.memberRoleName);
   member.addRole(role);
 
   const welcomeChannel = member.guild.channels.find('name', 'welcome');

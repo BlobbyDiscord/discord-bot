@@ -57,15 +57,16 @@ exports.run = (client, message) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: [],
-  permLevel: 0,
+  aliases: ["t"],
+  permLevel: "0"
 };
 // End of Permission Level Setting, etc.
 
 // Start of Misc.
 exports.help = {
-  name: "8ball",
-  description: "Get a fortune read towards your question!",
-  usage: "8ball <question>",
+  name: "traffic",
+  infoName: "Traffic",
+  description: "Shows the traffic regarding the server you have input!",
+  usage: "traffic [server]"
 };
 // End of Misc.

@@ -3,12 +3,10 @@ const axios = require('axios');
 
 // Start of "Traffic" Command
 exports.run = (client, message) => {
-  if (message.channel.id !== settings.commandsChannel) {
-    const botRoom = message.guild.channels.find("id", settings.commandsChannel);
-    return message.channel.send(
-      `Whoops, it looks like you're not in the ${botRoom} channel`,
-    );
-  }
+	if(message.channel.id !== settings.commandsChannel){
+		const botRoom = message.guild.channels.find("id", settings.commandsChannel);
+		return message.channel.send(`Whoops, it looks like you're not in the ${botRoom} channel`);
+	}
 	if(args.length < 1 || args.length > 2){
 		return message.author.send(["ERROR: Not enough arguments", "Usage: `!traffic <server> eu1 | eu2 | eu3 | eu4 | eu5 | us1 | sa1 | hk1`"]);
 	}

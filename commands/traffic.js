@@ -1,5 +1,8 @@
+// Start of Constants
 const { RichEmbed } = require('discord.js');
 const axios = require('axios');
+const settings = require("../storage/settings.json");
+// End of Constants
 
 // Start of "Traffic" Command
 exports.run = (client, message) => {

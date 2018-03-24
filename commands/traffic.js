@@ -19,7 +19,7 @@ exports.run = (client, message, args) => {
 						const embed = new RichEmbed()
 						response.data.response.top.forEach(function(city){
 							embed.addField(`${city.name}`, `${city.severity} (${city.players})`, true)
-							embed.setThumbnail('https://images-ext-1.discordapp.net/external/hffLJOvxnswAt2LxHZjAopEsLiaYbLYNO6UaVdyTpqs/https/cdn.discordapp.com/icons/359676519523811328/d98fcee2a524dea47c5c083755d17b57.jpg');
+							embed.setThumbnail('https://raw.githubusercontent.com/hgvmp/branding/master/steam/Steam%20logo%20blue%20on%20white.jpg');
 						})
 						message.channel.send({embed})
 				}).catch(function (error) {
@@ -31,7 +31,7 @@ exports.run = (client, message, args) => {
 						const embed = new RichEmbed()
 						response.data.response.top.forEach(function(city){
 							embed.addField(`${city.name}`, `${city.severity} (${city.players})`, true)
-							embed.setThumbnail('https://images-ext-1.discordapp.net/external/hffLJOvxnswAt2LxHZjAopEsLiaYbLYNO6UaVdyTpqs/https/cdn.discordapp.com/icons/359676519523811328/d98fcee2a524dea47c5c083755d17b57.jpg');
+							embed.setThumbnail('https://raw.githubusercontent.com/hgvmp/branding/master/steam/Steam%20logo%20blue%20on%20white.jpg');
 						})
 						message.channel.send({embed})
 				}).catch(function (error) {
@@ -43,7 +43,7 @@ exports.run = (client, message, args) => {
 						const embed = new RichEmbed()
 						response.data.response.top.forEach(function(city){
 							embed.addField(`${city.name}`, `${city.severity} (${city.players})`, true)
-							embed.setThumbnail('https://images-ext-1.discordapp.net/external/hffLJOvxnswAt2LxHZjAopEsLiaYbLYNO6UaVdyTpqs/https/cdn.discordapp.com/icons/359676519523811328/d98fcee2a524dea47c5c083755d17b57.jpg');
+							embed.setThumbnail('https://raw.githubusercontent.com/hgvmp/branding/master/steam/Steam%20logo%20blue%20on%20white.jpg');
 						})
 						message.channel.send({embed})
 				}).catch(function (error) {

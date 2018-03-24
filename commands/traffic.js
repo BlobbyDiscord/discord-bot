@@ -19,7 +19,6 @@ exports.run = (client, message, args) => {
 						const embed = new RichEmbed()
 						response.data.response.top.forEach(function(city){
 							embed.addField(`${city.name}`, `${city.severity} (${city.players})`, true)
-							embed.setThumbnail('https://raw.githubusercontent.com/hgvmp/branding/master/steam/Steam%20logo%20blue%20on%20white.jpg');
 						})
 						message.channel.send({embed})
 				}).catch(function (error) {
@@ -30,8 +29,7 @@ exports.run = (client, message, args) => {
 				axios.get('https://traffic.krashnz.com/api/v2/public/server/ets2/eu2/top.json').then(function (response) {
 						const embed = new RichEmbed()
 						response.data.response.top.forEach(function(city){
-							embed.addField(`${city.name}`, `${city.severity} (${city.players})`, true)
-							embed.setThumbnail('https://raw.githubusercontent.com/hgvmp/branding/master/steam/Steam%20logo%20blue%20on%20white.jpg');
+							embed.addField(`${city.name}`, `${city.severity} (${city.players})`, true);
 						})
 						message.channel.send({embed})
 				}).catch(function (error) {
@@ -42,8 +40,7 @@ exports.run = (client, message, args) => {
 				axios.get('https://traffic.krashnz.com/api/v2/public/server/ets2/eu3/top.json').then(function (response) {
 						const embed = new RichEmbed()
 						response.data.response.top.forEach(function(city){
-							embed.addField(`${city.name}`, `${city.severity} (${city.players})`, true)
-							embed.setThumbnail('https://raw.githubusercontent.com/hgvmp/branding/master/steam/Steam%20logo%20blue%20on%20white.jpg');
+							embed.addField(`${city.name}`, `${city.severity} (${city.players})`, true);
 						})
 						message.channel.send({embed})
 				}).catch(function (error) {

@@ -19,7 +19,7 @@ exports.run = (client, message, args) => {
 						const embed = new RichEmbed()
 						response.data.response.top.forEach(function(city){
 							embed.addField(`${city.name}`, `${city.severity} (${city.players})`, true)
-							embed.setThumbnail('https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/17190834_1859159134357048_8713377179654090336_n.png?oh=d4f82e7e77c2d2c8f40a084f60fbbbfa&oe=5B31856E');
+							embed.setThumbnail('https://images-ext-1.discordapp.net/external/hffLJOvxnswAt2LxHZjAopEsLiaYbLYNO6UaVdyTpqs/https/cdn.discordapp.com/icons/359676519523811328/d98fcee2a524dea47c5c083755d17b57.jpg');
 						})
 						message.channel.send({embed})
 				}).catch(function (error) {
@@ -31,7 +31,7 @@ exports.run = (client, message, args) => {
 						const embed = new RichEmbed()
 						response.data.response.top.forEach(function(city){
 							embed.addField(`${city.name}`, `${city.severity} (${city.players})`, true)
-							embed.setThumbnail('https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/17190834_1859159134357048_8713377179654090336_n.png?oh=d4f82e7e77c2d2c8f40a084f60fbbbfa&oe=5B31856E');
+							embed.setThumbnail('https://images-ext-1.discordapp.net/external/hffLJOvxnswAt2LxHZjAopEsLiaYbLYNO6UaVdyTpqs/https/cdn.discordapp.com/icons/359676519523811328/d98fcee2a524dea47c5c083755d17b57.jpg');
 						})
 						message.channel.send({embed})
 				}).catch(function (error) {
@@ -43,7 +43,7 @@ exports.run = (client, message, args) => {
 						const embed = new RichEmbed()
 						response.data.response.top.forEach(function(city){
 							embed.addField(`${city.name}`, `${city.severity} (${city.players})`, true)
-							embed.setThumbnail('https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/17190834_1859159134357048_8713377179654090336_n.png?oh=d4f82e7e77c2d2c8f40a084f60fbbbfa&oe=5B31856E');
+							embed.setThumbnail('https://images-ext-1.discordapp.net/external/hffLJOvxnswAt2LxHZjAopEsLiaYbLYNO6UaVdyTpqs/https/cdn.discordapp.com/icons/359676519523811328/d98fcee2a524dea47c5c083755d17b57.jpg');
 						})
 						message.channel.send({embed})
 				}).catch(function (error) {

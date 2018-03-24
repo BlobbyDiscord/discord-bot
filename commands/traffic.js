@@ -18,7 +18,7 @@ exports.run = (client, message, args) => {
 				axios.get('https://traffic.krashnz.com/api/v2/public/server/ets2/eu1/top.json').then(function (response) {
 						const embed = new RichEmbed()
 						response.data.response.top.forEach(function(city){
-							embed.addField(`${city.name}`, `${city.severity} (${city.players})`, true)
+							embed.addField(`${city.name}`, `${city.severity} (${city.players})`, true);
 						})
 						message.channel.send({embed})
 				}).catch(function (error) {
@@ -57,7 +57,7 @@ exports.run = (client, message, args) => {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["t"],
+  aliases: [],
   permLevel: "0"
 };
 // End of Permission Level Setting, etc.

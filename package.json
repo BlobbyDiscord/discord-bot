@@ -10,6 +10,7 @@
   "author": "Inclusive, estilate & Synplex",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.18.0",
     "bugsnag": "^2.0.1",
     "cleverbot-node": "^0.3.11",
     "dateformat": "^3.0.2",

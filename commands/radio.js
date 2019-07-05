@@ -16,7 +16,7 @@ exports.run = (client, message, args) => {
   if (args.length < 1 || args.length > 2) {
     return message.author.send([
       "ERROR: Not enough arguments",
-      "Usage: `!radio <play> <(optional) flow | eurotruck`",
+      "Usage: `m!radio <play> flow or eurotruck`",
     ]);
   }
 
@@ -99,7 +99,7 @@ exports.conf = {
 exports.help = {
   name: "radio",
   description:
-    "Play a variety of radio stations from Capital FM, TruckersFM and EuroTruckRadio!",
-  usage: "radio play <capitalfm, truckersfm, eurotruck>",
+    "Play a variety of radio stations from Flow Radio and EuroTruckRadio!",
+  usage: "radio play (station)>",
 };
 // End of Misc.

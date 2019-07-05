@@ -48,7 +48,7 @@ exports.run = (client, message, args) => {
         switch (args[1]) {
           case "flow":
             botRoom.send("Now Playing: Flow Radio");
-            connection.playArbitraryInput("https://eu10.fastcast4u.com:3890/.mp3");
+            connection.playArbitraryInput("http://eu10.fastcast4u.com:3900/stream");
             break;
           case "eurotruck":
             botRoom.send("Now Playing: Euro Truck Radio");

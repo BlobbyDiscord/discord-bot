@@ -30,7 +30,7 @@ exports.conf = {
 // Start of Misc.
 exports.help = {
   name: "ping",
-  description: "Ping/Pong command. Test's the response time of HGVMP Bot.",
+  description: "Ping/Pong command. Test's the response time of ModCart Bot.",
   usage: "ping",
 };
 // End of Misc.

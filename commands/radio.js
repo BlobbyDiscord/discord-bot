@@ -16,7 +16,7 @@ exports.run = (client, message, args) => {
   if (args.length < 1 || args.length > 2) {
     return message.author.send([
       "ERROR: Not enough arguments",
-      "Usage: `!radio <play> <(optional) truckersfm | eurotruck | capitalfm`",
+      "Usage: `!radio <play> <(optional) flow | eurotruck`",
     ]);
   }
 
@@ -46,20 +46,14 @@ exports.run = (client, message, args) => {
         }
 
         switch (args[1]) {
-          case "truckersfm":
-            botRoom.send("Now Playing: TruckersFM");
-            connection.playArbitraryInput("https://radio.truckers.fm/");
+          case "flow":
+            botRoom.send("Now Playing: Flow Radio");
+            connection.playArbitraryInput("https://eu10.fastcast4u.com:3890/.mp3");
             break;
           case "eurotruck":
             botRoom.send("Now Playing: Euro Truck Radio");
             connection.playArbitraryInput(
               "http://radio.eurotruckradio.co.uk:8000/stream",
-            );
-            break;
-          case "capitalfm":
-            botRoom.send("Now Playing: CapitalFM");
-            connection.playArbitraryInput(
-              "http://media-ice.musicradio.com/CapitalMP3",
             );
             break;
           default:

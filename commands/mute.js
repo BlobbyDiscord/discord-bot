@@ -11,7 +11,7 @@ exports.run = async (client, message, args) => {
   if (args.length !== 1) {
     return message.author.send([
       "ERROR: Not enough arguments",
-      "Usage: `!mute <@mention>`",
+      "Usage: `m!mute <@mention>`",
     ]);
   }
 

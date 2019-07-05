@@ -26,7 +26,7 @@ exports.conf = {
 // Start of Misc.
 exports.help = {
   name: "guilds",
-  description: "Shows the guilds the HGVMP Bot is part of.",
+  description: "Shows the guilds the ModCart Bot is part of.",
   usage: "guilds OR g",
 };
 // End of Misc
